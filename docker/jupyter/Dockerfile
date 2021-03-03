@@ -10,6 +10,10 @@ FROM jupyter/datascience-notebook
 WORKDIR /opt/conda/lib/python3.8/site-packages
 RUN /bin/bash -c "git clone https://github.com/DidierRLopes/GamestonkTerminal.git"
 
+WORKDIR /opt/conda/lib/python3.8/site-packages/GamestonkTerminal
+RUN /bin/bash -c "pip install -r requirements.txt"
+
+
 ENV JUPYTER_ENABLE_LAB=yes
 
 EXPOSE 8888
