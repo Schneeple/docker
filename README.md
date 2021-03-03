@@ -2,7 +2,7 @@
 
 - Jupyter
 
-    1. Clone Repo `git clone https://github.com/Schneeple/docker.git`
+    1. Clone Repo `git clone https://github.com/Schneeple/home.git`
     2. Go into the directory `cd home/docker/jupyter/`
     3. Build the docker image `docker build -t coltonjupyter -f Dockerfile .`
     4. Naviagte to where you the notebooks to save to in terminal and run: `docker run -d -p 10000:8888 -v "$PWD":/home/jovyan/work coltonjupyter`
